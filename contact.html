@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kontak - Cinema Booking</title>
+
+  <!-- Link ke Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link ke FontAwesome (Untuk Ikon Sosial Media) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+.form-control {
+  border-radius: 0.375rem;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+footer i {
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #f8f9fa; /* Ganti dengan warna yang Anda inginkan */
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Cinema Booking</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Konten Halaman Kontak -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Hubungi Kami</h2>
+
+    <!-- Form Kontak -->
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <form action="#" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Pesan</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Informasi Kontak -->
+      <div class="col-12 col-md-6">
+        <h4>Informasi Kontak Kami</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Alamat:Alamat: Jl. munggang indah No. 9, RT.6/RW.11, Munggang, Kalibeber, Kec. Mojotengah,
+            Kabupaten Wonosobo, Jawa Tengah 56351</p>
+        <p><i class="fas fa-phone-alt"></i> Telepon: +628 12702 21479 </p>
+        <p><i class="fas fa-envelope"></i> Email: yuliatiimud@gmail.com</p>
+
+        <!-- Bagian Ikon Sosial Media -->
+        <div class="col-12 col-md-6">
+            <div class="d-flex justify-content-center">
+               <!-- Ikon WhatsApp -->
+           <a href="https://wa.me/6281270221479" target="_blank" class="text-skyblue mx-3">
+          <i class="fab fa-whatsapp fa-2x"></i></a>
+  
+             
+              <!-- Ikon Instagram -->
+              <a href="https://www.instagram.com/yuliati_mud19/profilecard/?igsn=MTFtN2ZnYT4Y2RydQ==" target="_blank" class="text-skyblue mx-2">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+             <!-- Ikon Email -->
+           <a href="mailto:yuliatiimud@gmail.com" class="text-skyblue mx-3">
+           <i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Cinema Booking. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- Script Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

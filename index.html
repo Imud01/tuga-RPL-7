@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Cinema Booking</title>
+
+  <!-- Link ke Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Link ke FontAwesome untuk ikon (opsional) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Link ke CSS kustom -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Style tambahan untuk form */
+.form-select {
+  height: 45px;
+}
+
+button {
+  font-size: 16px;
+  padding: 12px 0;
+}
+
+/* Gaya untuk gambar film */
+.img-fluid {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Style untuk footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cinema Booking</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Halaman Beranda -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Pesan Tiket Bioskop</h2>
+    
+    <!-- Form Pemesanan Tiket -->
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <!-- Pilihan Film -->
+        <div class="mb-4">
+          <label for="movieSelect" class="form-label">Pilih Film</label>
+          <select class="form-select" id="movieSelect">
+            <option selected>Film A</option>
+            <option>Film B</option>
+            <option>Film C</option>
+            <option>Film D</option>
+          </select>
+        </div>
+
+        <!-- Pilih Jam Tayang -->
+        <div class="mb-4">
+          <label for="showTime" class="form-label">Pilih Jam Tayang</label>
+          <select class="form-select" id="showTime">
+            <option selected>10:00 AM</option>
+            <option>01:00 PM</option>
+            <option>04:00 PM</option>
+            <option>07:00 PM</option>
+          </select>
+        </div>
+
+        <!-- Pilih Tanggal -->
+        <div class="mb-4">
+          <label for="showDate" class="form-label">Pilih Tanggal</label>
+          <input type="date" class="form-control" id="showDate">
+        </div>
+
+        <!-- Jumlah Tiket -->
+        <div class="mb-4">
+          <label for="ticketCount" class="form-label">Jumlah Tiket</label>
+          <input type="number" class="form-control" id="ticketCount" min="1" value="1">
+        </div>
+
+        <!-- Pilih Nomor Kursi -->
+        <div class="mb-4">
+          <label for="seatNumber" class="form-label">Pilih Nomor Kursi</label>
+          <select class="form-select" id="seatNumber">
+            <option selected>A1</option>
+            <option>A2</option>
+            <option>A3</option>
+            <option>A4</option>
+            <option>A5</option>
+          </select>
+        </div>
+
+        <!-- Pilih Metode Pembayaran -->
+        <div class="mb-4">
+          <label for="paymentMethod" class="form-label">Pilih Cara Pembayaran</label>
+          <select class="form-select" id="paymentMethod">
+            <option selected>Transfer Bank</option>
+            <option>Gopay</option>
+            <option>OVO</option>
+            <option>LinkAja</option>
+          </select>
+        </div>
+
+        <!-- Tombol Pesan Tiket -->
+        <button class="btn btn-primary w-100">Pesan Tiket</button>
+      </div>
+
+      <!-- Gambar atau Informasi Film -->
+      <div class="col-12 col-md-6">
+        <img src="konsep-poster-film-sesuai-genre.jpg" class="img-fluid rounded" alt="Film Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Cinema Booking. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- Script Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
